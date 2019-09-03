@@ -5,19 +5,19 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_01_hello_world", "lab_01_hello_world\lab_01_hello_world.csproj", "{54B8D361-0F0D-45E3-919F-FEBBDB0F1BAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_02_class", "lab_02\lab_02_class.csproj", "{543A085C-00BD-496F-AE7F-25A4B8CFA881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_02_class", "lab_02\lab_02_class.csproj", "{543A085C-00BD-496F-AE7F-25A4B8CFA881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_03_private_public_fields", "lab_03_private_public_fields\lab_03_private_public_fields.csproj", "{23A35A84-4C26-43E4-887E-54FEAFD2765C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_03_private_public_fields", "lab_03_private_public_fields\lab_03_private_public_fields.csproj", "{23A35A84-4C26-43E4-887E-54FEAFD2765C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "class_04_class_summary", "class_04_class_summary\class_04_class_summary.csproj", "{1D556358-F343-4D46-9AFF-BCB60B053200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_08_class_summary", "class_04_class_summary\lab_08_class_summary.csproj", "{1D556358-F343-4D46-9AFF-BCB60B053200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_04_properties", "lab_04_properties\lab_04_properties.csproj", "{7CC02CDD-B58A-4EE9-BF41-2E4B1AE8FBCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_04_properties", "lab_04_properties\lab_04_properties.csproj", "{7CC02CDD-B58A-4EE9-BF41-2E4B1AE8FBCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_05_multiple_objects", "class_05_multiple_objects\lab_05_multiple_objects.csproj", "{6ED16370-BEB7-463E-BA4E-FE21203D72EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_05_multiple_objects", "class_05_multiple_objects\lab_05_multiple_objects.csproj", "{6ED16370-BEB7-463E-BA4E-FE21203D72EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_06_inheritence", "class_06_inheritence\lab_06_inheritence.csproj", "{FFFD66C6-2E1E-4BF7-851D-7D7767344125}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_06_inheritence", "class_06_inheritence\lab_06_inheritence.csproj", "{FFFD66C6-2E1E-4BF7-851D-7D7767344125}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_07_methods", "lab_07_methods\lab_07_methods.csproj", "{B6EC1309-EAF1-4143-B4A8-9B61BE8B4E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_07_methods", "lab_07_methods\lab_07_methods.csproj", "{B6EC1309-EAF1-4143-B4A8-9B61BE8B4E62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

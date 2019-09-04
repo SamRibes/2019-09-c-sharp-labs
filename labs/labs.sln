@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_08_dynamic", "lab_08_dy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_09_constructors", "lab_09_constructors\lab_09_constructors.csproj", "{CE8435CF-0EFD-4048-AF00-D64283ECCB53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_10_overloading", "lab_10_overloading\lab_10_overloading.csproj", "{819BE883-B485-4232-9916-7A91E8D3962D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_11_polymorphism", "lab_11_polymorphism\lab_11_polymorphism.csproj", "{B86895FE-528F-45F7-BD26-671ED29205FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{CE8435CF-0EFD-4048-AF00-D64283ECCB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE8435CF-0EFD-4048-AF00-D64283ECCB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE8435CF-0EFD-4048-AF00-D64283ECCB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819BE883-B485-4232-9916-7A91E8D3962D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819BE883-B485-4232-9916-7A91E8D3962D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819BE883-B485-4232-9916-7A91E8D3962D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819BE883-B485-4232-9916-7A91E8D3962D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86895FE-528F-45F7-BD26-671ED29205FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86895FE-528F-45F7-BD26-671ED29205FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86895FE-528F-45F7-BD26-671ED29205FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86895FE-528F-45F7-BD26-671ED29205FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

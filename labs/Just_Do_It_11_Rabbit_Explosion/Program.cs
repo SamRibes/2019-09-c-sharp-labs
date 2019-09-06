@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
+using System.Diagnostics;
+using System.IO;
 
 namespace Just_Do_It_11_Rabbit_Explosion
 {
@@ -8,57 +9,36 @@ namespace Just_Do_It_11_Rabbit_Explosion
     {
         static void Main(string[] args)
         {
-            /*List<Rabbit> rabbits = new List<Rabbit>();
+            var results = just_do_it_11_rabbit_explosion.Rabbit_Exponential_Growth(1000).ToTuple();
+            Console.WriteLine(($"Took {results.Item1} years to exceed the population limit. Finished with {results.Item2} rabbits."));
+        }
 
-            int popLimit = 50;
+    }
 
-            while (rabbits.Count < popLimit)
-            {
-                var rabbit = new Rabbit();
-                rabbits.Add(rabbit);
-                Thread.Sleep(200);
-
-                Console.WriteLine($"Rabbit added. Current population is {rabbits.Count}.");
-            }*/
-
-            /*List<Rabbit> rabbits = new List<Rabbit>();
-            var initialRabbit = new Rabbit();
-            rabbits.Add(initialRabbit);
-
-            int popLimit = 50;
-
-            Console.WriteLine($"Rabbit added. Current population is {rabbits.Count}.");
-
-            while (rabbits.Count < popLimit)
-            {
-                var rabbit = new Rabbit();
-
-                int currentPop = rabbits.Count;
-
-                for (int i = 0; i < (currentPop);i++)
-                {
-                    rabbits.Add(rabbit);
-                }
-
-                Thread.Sleep(200);
-
-                Console.WriteLine($"Rabbit added. Current population is {rabbits.Count}.");
-            }*/
-
+    public class just_do_it_11_rabbit_explosion
+    {
+        public static (int years, int population) Rabbit_Exponential_Growth(int popLimit)
+        {
+            var s = new Stopwatch();
+            s.Start();
             var rabbits = new List<Rabbit>();
 
-            var popLimit = 100;
             var years = 0;
             var adultAge = 3;
+
+            //Set up file name
+            var fileName = $"output-{DateTime.Now.ToLongDateString()}.log";
+            File.WriteAllText(fileName, "Rabbit Log");
 
             Console.WriteLine($"Current population is {rabbits.Count}.");
 
             while (rabbits.Count < popLimit)
             {
-                if(rabbits.Count < 1)
+                if (rabbits.Count < 1)
                 {
                     var initialRabbit = new Rabbit(0);
                     rabbits.Add(initialRabbit);
+                    File.AppendAllText(fileName, $"Rabbit born at {DateTime.Now}");
                 }
 
                 var currentPop = rabbits.Count;
@@ -70,24 +50,28 @@ namespace Just_Do_It_11_Rabbit_Explosion
                     {
                         var newRabbit = new Rabbit(0);
                         rabbits.Add(newRabbit);
+                        File.AppendAllText(fileName, $"Rabbit born at {DateTime.Now}");
                     }
                 }
                 years++;
 
                 Console.WriteLine($"Current population is {rabbits.Count}.");
             }
-            Console.WriteLine($"Took {years} years to exceed the population limit. Finished with {rabbits.Count} rabbits.");
+            s.Stop();
+            Console.WriteLine(s.ElapsedMilliseconds);
+
+            File.AppendAllText(fileName, $"Took {years} years to exceed the population limit. Finished with {rabbits.Count} rabbits.");
+            return (years, rabbits.Count);
         }
     }
-
     class Rabbit
     {
         public string Name { get; set; }
         public int Age { get; set; }
-
-        public Rabbit (int age){
+        public Rabbit(int age) {
             Age = age;
         }
     }
 
 }
+

@@ -23,7 +23,7 @@ namespace lab_07_methods
             OutParameters(2, 5, out int a);         //a = 2 * 5
 
             var output = Tuple();
-            Console.WriteLine(output.x, output.y, output.z);
+            //Console.WriteLine(output.x, output.y, output.z);
         }
 
         static void DoThisToo()

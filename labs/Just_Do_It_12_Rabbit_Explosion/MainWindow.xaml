@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Just_Do_It_12_Rabbit_Explosion"
         mc:Ignorable="d"
-        Title="Rabbit Explosion" Height="Auto" Width="Auto">
+        Title="Rabbit Explosion" Height="Auto" Width="Auto" FontFamily="Ariel" FontSize="30">
     <Grid Background="#61FFE4">
         <Grid.RowDefinitions>
             <RowDefinition Height ="*"/>
@@ -17,6 +17,10 @@
             <ColumnDefinition Width ="*"/>
             <ColumnDefinition Width ="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Button01" Grid.Row="1" Grid.Column="1" Content="Click here to start" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button01_Click" Width="Auto" Height="auto"/>
+        <Button x:Name="Button01" Grid.Row="0" Grid.Column="1" Content="Add" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button01_Click" Width="Auto" Height="auto"/>
+        <Image x:Name="ImageJig" Grid.Column="1" Grid.Row="1" Stretch="Uniform" Source="C:\Users\Samuel  Ribeiro\Downloads\jigglypuff.png" Visibility="Hidden"/>
+        <TextBox x:Name="AgeBox" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="50"/>
+        <TextBox x:Name="NameBox" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="50"/>
+        <TextBlock x:Name="DataBlock" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="WhiteSmoke"/>
     </Grid>
 </Window>

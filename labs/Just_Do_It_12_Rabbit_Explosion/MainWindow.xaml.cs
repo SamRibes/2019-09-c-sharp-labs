@@ -28,44 +28,18 @@ namespace Just_Do_It_12_Rabbit_Explosion
         }
         public void Initialise()
         {
-            rabbits = db.Rabbits.ToList();
-        }
-
-        public void stuff()
-        {
             using (var db = new RabbitDbEntities())
             {
                 rabbits = db.Rabbits.ToList();
-               // PrintRabbit();
             }
-
-            //new rabbit : wpf textbox01.text ==> use for age , name (2boxes)
-            //buttonAdd : run this code
-
-            var newRabbit = new Rabbit() { Age = 0, Name = $"Sam{rabbits.Count + 1}" };
-
-            using (var db = new RabbitDbEntities())
-            {
-                db.Rabbits.Add(newRabbit);
-                db.SaveChanges();
-            }
-
-
-            System.Threading.Thread.Sleep(200);
-            Console.ReadLine();
-
-            using (var db = new RabbitDbEntities())
-            {
-                //PrintRabbit();
-            }
-            Console.ReadLine();
         }
 
-        static void PrintRabbitToBlock()
+        void PrintRabbitToBlock()
         {
             var db = new RabbitDbEntities();
             rabbits = db.Rabbits.ToList();
-            rabbits.ForEach(rabbit => DataBlock.Text.Append($"{rabbit.RabbitID,-5}" + $"{rabbit.Name,-12}{rabbit.Age}");
+            RabbitGrid.ItemsSource = rabbits;
+            //rabbits.ForEach(rabbit => DataBlock.Text.Append($"{rabbit.RabbitID,-5}" + $"{rabbit.Name,-12}{rabbit.Age}");
 
             Console.ReadLine();
         }
@@ -75,7 +49,7 @@ namespace Just_Do_It_12_Rabbit_Explosion
             var newRabbit = new Rabbit() 
             { 
                 Age = Int32.Parse(AgeBox.Text), 
-                Name = NameBox.Text 
+                Name = NameBox.Text
             };
 
             using (var db = new RabbitDbEntities())

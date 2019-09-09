@@ -18,9 +18,10 @@
             <ColumnDefinition Width ="*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="Button01" Grid.Row="0" Grid.Column="1" Content="Add" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button01_Click" Width="Auto" Height="auto"/>
-        <Image x:Name="ImageJig" Grid.Column="1" Grid.Row="1" Stretch="Uniform" Source="C:\Users\Samuel  Ribeiro\Downloads\jigglypuff.png" Visibility="Hidden"/>
+        <Image x:Name="ImageJig" Grid.Column="1" Grid.Row="1" Stretch="Uniform" Source="C:\Users\Samuel  Ribeiro\Downloads\jigglypuff.png"/>
         <TextBox x:Name="AgeBox" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="50"/>
         <TextBox x:Name="NameBox" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="50"/>
-        <TextBlock x:Name="DataBlock" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="WhiteSmoke"/>
+        <!--<TextBlock x:Name="DataBlock" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="WhiteSmoke"/>-->
+        <DataGrid x:Name="RabbitGrid" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="WhiteSmoke"/>
     </Grid>
 </Window>

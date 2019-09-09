@@ -32,6 +32,7 @@ namespace Just_Do_It_12_Rabbit_Explosion
             {
                 rabbits = db.Rabbits.ToList();
             }
+            ImageJig.IsEnabled = false;
         }
 
         void PrintRabbitToBlock()

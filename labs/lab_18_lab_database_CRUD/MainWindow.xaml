@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_18_lab_database_CRUD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="Auto" Width="Auto" FontSize="25">
+        Title="MainWindow" Height="Auto" Width="Auto" FontSize="25" KeyDown="DoThis">
     <Grid Background="#FF4F2B">
         <Grid.RowDefinitions>
             <RowDefinition Height ="Auto"/>
@@ -22,12 +22,14 @@
         </Grid.ColumnDefinitions>
         <Label x:Name="LabelHeading" Content="RabbitApp" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="35" FontWeight="Bold"/>
         <ListBox x:Name="ListBoxRabbits" Grid.Row="4" Grid.Column="0" Background="#FF8870" DisplayMemberPath="Name" SelectionChanged="ListBoxRabbits_SelectionChanged"/>
-        <TextBox x:Name="NameBox" Grid.Row="2" Grid.Column="2" Background="#CC3F23"/>
-        <TextBox x:Name="AgeBox" Grid.Row="2" Grid.Column="3" Background="#CC3F23"/>
+        <TextBox x:Name="NameBox" Grid.Row="2" Grid.Column="2" Background="#CC3F23" Foreground="White"/>
+        <TextBox x:Name="AgeBox" Grid.Row="2" Grid.Column="3" Background="#CC3F23" Foreground="White"/>
         <Label x:Name="NameLabel" Content="Name" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
         <Label x:Name="AgeLabel" Content="Age" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
         <Button x:Name="AddButton" Grid.Row="1" Grid.Column="0" Background="#80473C" Content="Add" Foreground="White" Click="AddButton_Click"/>
         <Button x:Name="DeleteButton" Grid.Row="2" Grid.Column="0" Background="#80473C" Content="Delete" Foreground="White" Click="DeleteButton_Click"/>
         <Button x:Name="EditButton" Grid.Row="3" Grid.Column="0" Background="#80473C" Content="Edit" Foreground="White" Click="EditButton_Click"/>
-    </Grid>
+        <Button x:Name="CancelButton" Grid.Row="2" Grid.Column="1" Background="#80473C" Content="Restart" Foreground="White" Click="CancelButton_Click"/>
+        <Image x:Name="ImageJig" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" Stretch="Uniform" Source="C:\Users\Samuel  Ribeiro\Downloads\jigglypuff.png"/>
+        </Grid>
 </Window>

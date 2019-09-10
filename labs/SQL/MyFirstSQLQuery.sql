@@ -1,16 +1,16 @@
-﻿drop database if exists RabbitDb
-go
+﻿--select CustomerID, CompanyName, Address, city, region, postalcode, country 
+--from customers 
+--where city like 'london' or city like 'paris'
 
-create database RabbitDb
-go
+--select ProductName from products where QuantityPerUnit like '%bottle%'
 
-select 'Here is a comment'
+--select products.ProductName, Supplier.CompanyName, Suppliers.Country from products inner join Supplier on Products.SupplierID = Suppliers.SupplierID where QuantityPerUnit like '%bottle%'
 
-use RabbitDb
-go
+--SELECT products.ProductName, Suppliers.CompanyName, Suppliers.Country 
+--FROM Products 
+--INNER JOIN Suppliers ON
+--Products.SupplierID = Suppliers.SupplierID 
+--where QuantityPerUnit like '%bottle%'
 
-CREATE TABLE Rabbits(
-	RabbitID INT NOT NULL IDENTITY PRIMARY KEY,
-	Age INT,
-	Name NVARCHAR(50) NULL
-);
+select CategoryName, count(*)
+from Categories

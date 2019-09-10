@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Just_Do_It_12_Rabbit_Explos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_18_lab_database_CRUD", "lab_18_lab_database_CRUD\lab_18_lab_database_CRUD.csproj", "{73041044-44E1-4765-98D9-D3D2A959D125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_19_structs", "lab_19_structs\lab_19_structs.csproj", "{695BFDAE-37F7-44FC-9639-272244352459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_22_northwind", "lab_22_northwind\lab_22_northwind.csproj", "{D69DD536-837C-40EF-9BB9-F099D8A3C768}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{73041044-44E1-4765-98D9-D3D2A959D125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73041044-44E1-4765-98D9-D3D2A959D125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73041044-44E1-4765-98D9-D3D2A959D125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695BFDAE-37F7-44FC-9639-272244352459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695BFDAE-37F7-44FC-9639-272244352459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695BFDAE-37F7-44FC-9639-272244352459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695BFDAE-37F7-44FC-9639-272244352459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69DD536-837C-40EF-9BB9-F099D8A3C768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69DD536-837C-40EF-9BB9-F099D8A3C768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69DD536-837C-40EF-9BB9-F099D8A3C768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69DD536-837C-40EF-9BB9-F099D8A3C768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

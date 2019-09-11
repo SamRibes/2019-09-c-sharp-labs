@@ -4,7 +4,11 @@
 
 --select ProductName from products where QuantityPerUnit like '%bottle%'
 
---select products.ProductName, Supplier.CompanyName, Suppliers.Country from products inner join Supplier on Products.SupplierID = Suppliers.SupplierID where QuantityPerUnit like '%bottle%'
+--select products.ProductName, Supplier.CompanyName, Suppliers.Country 
+--from products 
+--inner join Supplier 
+--on Products.SupplierID = Suppliers.SupplierID 
+--where QuantityPerUnit like '%bottle%'
 
 --SELECT products.ProductName, Suppliers.CompanyName, Suppliers.Country 
 --FROM Products 
@@ -12,5 +16,8 @@
 --Products.SupplierID = Suppliers.SupplierID 
 --where QuantityPerUnit like '%bottle%'
 
-select CategoryName, count(*)
-from Categories
+select count(*) as 'Number of Products in Category', Products.CategoryID
+from Products
+inner join Categories 
+on Products.CategoryID = Categories.CategoryID
+group by Products.CategoryID

@@ -90,6 +90,83 @@ namespace lab_25_data_types
             uint positiveInt = 500;
             uint MaxPositiveInt;
             Console.WriteLine(uint.MaxValue);
+
+            //Operators
+            //a + b
+            //a & b are Operands
+            //+ is an Operator
+            //Urany
+            //Increment
+            //x++       OR      ++x
+            int x = 0;
+            x++;
+            ++x;
+            //both add 1
+            //generally use x++ and if possible use on seperate line
+            int y1 = 1000;
+            int y2 = 1000;
+            int z1 = y1++;          //z1 = 1000     THEN    incremented
+            int z2 = ++y2;          //incremented   THEN    z2 = 1001
+            Console.WriteLine(z1);
+            Console.WriteLine(z2);
+
+            //NOT
+            Console.WriteLine(!true);   //false
+            Console.WriteLine(!!true);  //true
+
+
+            //Binary
+            //Modulus
+            //integer division: take care becaure int / int = int
+            Console.WriteLine(9/4);     //== 2
+            //9/4 = 2 remainder 1 = 2 1/4
+            //int part is easy. divide ints
+            //modulus does the thing
+            Console.WriteLine(9%4);
+
+            //Proper decimal division, then 1 number has to be non int
+            Console.WriteLine(9.0 / 4);
+
+            //Ternary operator
+            //if(condition) ? return this if true : return this if false;
+
+            Console.WriteLine((10 > 4) ? "high" : "low");
+
+            //Nullable
+            int number = 100;
+            int? number2 = 1000;
+
+            //number 2 i useful if we read from a database and its possible the box is blank
+            //if its blank it returns null
+            number2 = null;
+
+            //null coalesce
+            //shorthand for 
+            //if value then return value else return null
+            Console.WriteLine("somevalue" ?? "return this if null");
+            Console.WriteLine(null ?? "return this if null");
+
+            //Default value
+            int somenumber = default;   //assigns 0
+            string? somenumber2 = default;
+            Console.WriteLine(somenumber);
+            Console.WriteLine(somenumber2);
+            Console.WriteLine((somenumber2 == null) ? somenumber2 : "not null");
+            if (somenumber2 == null)
+            {
+                Console.WriteLine("its null");
+            }
+
+            //bit shift
+            //1010 = 10
+            //shift to right
+            //0101 = 5
+            //divided by 2
+            
+            //1010 = 10
+            //shift left
+            //10100 = 20
+            //times 2
         }
     }
 }

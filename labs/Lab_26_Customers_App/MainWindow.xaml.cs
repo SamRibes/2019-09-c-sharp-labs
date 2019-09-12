@@ -18,8 +18,14 @@ namespace Lab_26_Customers_App
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
+        static bool whatSearch;
+        static List<Customer> customers;
+        static List<Order> orders;
+        static List<Order_Detail> order_Details;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,52 +36,130 @@ namespace Lab_26_Customers_App
         {
             //ListBoxCustomers.ItemsSource = customers.ToList().Where(c => c.ContactName.Contains(CustomerSearchBox.Text));
             //ListBoxCustomers.DisplayMemberPath = "ContactName";
-
+            goToStack02();
             using (var db = new NorthwindEntities())
             {
-
                 ListBoxCustomers.ItemsSource = db.Customers.ToList();
-                //ListBoxCustomers.DisplayMemberPath = "ContactName";
+                ListBoxOrders.ItemsSource = db.Orders.ToList();
             }
 
+            CustomerNameFilter.IsEnabled = false;
+            CustomerCityFilter.IsEnabled = true;
+            whatSearch = false;
+            using (var db = new NorthwindEntities())
+            {
+                customers = db.Customers.ToList();
+                orders = db.Orders.ToList();
+            }
 
         }
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             if (StackPanel01.Visibility == Visibility.Visible)
             {
-                StackPanel01.Visibility = Visibility.Collapsed;
-                StackPanel02.Visibility = Visibility.Collapsed;
-                StackPanel03.Visibility = Visibility.Visible;
+                goToStack03();
             }
             else if (StackPanel02.Visibility == Visibility.Visible)
             {
-                StackPanel01.Visibility = Visibility.Visible;
-                StackPanel02.Visibility = Visibility.Collapsed;
-                StackPanel03.Visibility = Visibility.Collapsed;
+                goToStack01();
             }
             else if (StackPanel03.Visibility == Visibility.Visible)
             {
-                StackPanel01.Visibility = Visibility.Collapsed;
-                StackPanel02.Visibility = Visibility.Visible;
-                StackPanel03.Visibility = Visibility.Collapsed;
+                goToStack02();
+            }
+        }
+        private void Forward_Click(object sender, RoutedEventArgs e)
+        {
+            if (StackPanel01.Visibility == Visibility.Visible)
+            {
+                goToStack02();
+                using (var db = new NorthwindEntities())
+                {
+                    ListBoxOrders.ItemsSource = db.Orders.ToList();
+                }
+            }
+            else if (StackPanel02.Visibility == Visibility.Visible)
+            {
+                goToStack03();
+            }
+            else if (StackPanel03.Visibility == Visibility.Visible)
+            {
+                goToStack01();
             }
         }
 
         private void CustomerSearchBox_KeyUp(object sender, KeyEventArgs e)
         {
-
             using (var db = new NorthwindEntities())
             {
-
-                ListBoxCustomers.ItemsSource = db.Customers.Where(c => c.ContactName.Contains(CustomerSearchBox.Text)).ToList();
-                //ListBoxCustomers.DisplayMemberPath = "ContactName";
+                if (whatSearch == false)
+                {
+                    ListBoxCustomers.ItemsSource = db.Customers.Where(c => c.ContactName.Contains(CustomerSearchBox.Text)).ToList();
+                }
+                else
+                {
+                    ListBoxCustomers.ItemsSource = db.Customers.Where(c => c.City.Contains(CustomerSearchBox.Text)).ToList();
+                }
             }
         }
         private void CustomerNameFilter_Click(object sender, RoutedEventArgs e)
         {
-           
+            CustomerNameFilter.IsEnabled = false;
+            CustomerCityFilter.IsEnabled = true;
+            whatSearch = false;
+        }
+        private void CustomerCityFilter_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerNameFilter.IsEnabled = true;
+            CustomerCityFilter.IsEnabled = false;
+            whatSearch = true;
         }
 
+        private void ListBoxCustomers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            using (var db = new NorthwindEntities())
+            {
+                orders = db.Orders.ToList();
+                customers = db.Customers.ToList();
+
+                Customer previouslySelected = (Customer)ListBoxCustomers.SelectedItem;
+
+                searchOrders(previouslySelected.ContactName.ToString());
+            }
+        }
+
+       
+        
+        private void ListBoxCustomers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        void searchOrders(string orderToSearch)
+        {
+            using(var db = new NorthwindEntities())
+            { 
+                ListBoxOrders.ItemsSource = db.Orders.Where(o => o.Customer.ContactName.Contains(orderToSearch)).ToList();
+            }
+        }
+
+        void goToStack01()
+        {
+            StackPanel01.Visibility = Visibility.Visible;
+            StackPanel02.Visibility = Visibility.Collapsed;
+            StackPanel03.Visibility = Visibility.Collapsed;
+        }
+        void goToStack02()
+        {
+            StackPanel01.Visibility = Visibility.Collapsed;
+            StackPanel02.Visibility = Visibility.Visible;
+            StackPanel03.Visibility = Visibility.Collapsed;
+        }
+        void goToStack03()
+        {
+            StackPanel01.Visibility = Visibility.Visible;
+            StackPanel02.Visibility = Visibility.Collapsed;
+            StackPanel03.Visibility = Visibility.Collapsed;
+        }
     }
 }

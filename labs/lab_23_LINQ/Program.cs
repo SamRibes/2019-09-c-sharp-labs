@@ -14,51 +14,51 @@ namespace lab_23_LINQ
             using(var db= new NorthwindEntities())
             {
                 ////LINQ simple Query
-                //customers = db.Customers.ToList();
+                customers = db.Customers.ToList();
 
-                //Console.WriteLine("\n\nTrivial LINQ Query \n");
+                Console.WriteLine("\n\nTrivial LINQ Query \n");
 
-                ////This is an abstract type so we cast it to a list
-                //var output1 =
-                //    (from Customer in db.Customers
-                //    select Customer).ToList();
+                //This is an abstract type so we cast it to a list
+                var output1 =
+                    (from Customer in db.Customers
+                     select Customer).ToList();
 
-                //PrintCustomers(output1);
+                PrintCustomers(output1);
 
 
                 ////LINQ Query WHERE city is London OR Berlin
-                //Console.WriteLine("\n\nLINQ Query WHERE city is London OR Berlin\n");
+                Console.WriteLine("\n\nLINQ Query WHERE city is London OR Berlin\n");
 
-                //var LINQwhere =
-                //    (from customer in db.Customers
-                //     where customer.City == "London" || customer.City == "Berlin"
-                //     select customer).ToList();
+                var LINQwhere =
+                    (from customer in db.Customers
+                     where customer.City == "London" || customer.City == "Berlin"
+                     select customer).ToList();
 
-                //PrintCustomers(LINQwhere);
+                PrintCustomers(LINQwhere);
 
 
 
                 ////Order by Customer Name
-                //Console.WriteLine("\n\nOrder by Customer Name \n");
+                Console.WriteLine("\n\nOrder by Customer Name \n");
 
-                //var LINQOrderBy =
-                //    (from customer in db.Customers
-                //     where customer.City == "London"
-                //     orderby customer.ContactName descending
-                //     select customer).ToList();
-                //PrintCustomers(LINQOrderBy);
+                var LINQOrderBy =
+                    (from customer in db.Customers
+                     where customer.City == "London"
+                     orderby customer.ContactName descending
+                     select customer).ToList();
+                PrintCustomers(LINQOrderBy);
 
 
 
                 ////Lambda has OrderBy ...ThenBy
-                //Console.WriteLine("\n\nLambda has OrderBy ...ThenBy \n");
+                Console.WriteLine("\n\nLambda has OrderBy ...ThenBy \n");
 
-                //var LINQOrderByThenBy =
-                //    customers.Where(c => c.City == "London" || c.City == "Berlin" || c.City == "Madrid")
-                //    .OrderBy(c => c.City)
-                //    .ThenBy(c => c.ContactName)
-                //    .ToList();
-                //PrintCustomers(LINQOrderByThenBy);
+                var LINQOrderByThenBy =
+                    customers.Where(c => c.City == "London" || c.City == "Berlin" || c.City == "Madrid")
+                    .OrderBy(c => c.City)
+                    .ThenBy(c => c.ContactName)
+                    .ToList();
+                PrintCustomers(LINQOrderByThenBy);
 
 
                 //Creating a Custom output object
@@ -77,9 +77,9 @@ namespace lab_23_LINQ
 
                 //manual print
 
-                //customObject.ToList().ForEach(item => Console.WriteLine(
-                //    $"{item.Name,-30} {item.OrderID,-15} {item.OrderDate:dd/MM/yyyy}\t{item.ShipCity,-30}"
-                //    ));
+                customObject.ToList().ForEach(item => Console.WriteLine(
+                    $"{item.Name,-30} {item.OrderID,-15} {item.OrderDate:dd/MM/yyyy}\t{item.ShipCity,-30}"
+                    ));
 
                 //slick print
                 db.Orders.ToList().ForEach(item =>
@@ -94,13 +94,13 @@ namespace lab_23_LINQ
                 //db.order_details.where(item => item.order.customer.city == "berlin").tolist()
                 //    .foreach (o =>
                 // {
-                //    //where city is berlin
-                //    //print customer name, city, orderid, orderdate
-                //    console.writeline($"{o.order.customer.contactname,-30} {o.orderid,-15} {o.order.orderdate:dd/mm/yyyy}\t{o.order.customer.city,-15} {o.productid}");
+                //     //where city is berlin
+                //     //print customer name, city, orderid, orderdate
+                //     console.writeline($"{o.order.customer.contactname,-30} {o.orderid,-15} {o.order.orderdate:dd/mm/yyyy}\t{o.order.customer.city,-15} {o.productid}");
 
                 // }) ;
 
-                db.Order_Details.ToList();
+                //db.Order_Details.ToList();
                 //db.Order_Details.Where(item => item.Order.Customer.City == "Berlin").ToList();
                 //db.order_details.tolist().foreach (o =>
                 // {
@@ -108,7 +108,7 @@ namespace lab_23_LINQ
                 //    //print customer name, city, orderid, orderdate
                 //    console.writeline($"{o.order.customer.contactname,-30} {o.orderid,-15} {o.order.orderdate:dd/mm/yyyy}\t{o.order.customer.city,-15} {o.productid}");
 
-                    //});
+                //    });
 
                 db.Order_Details.ToList();
                 db.Products.ToList();

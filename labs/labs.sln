@@ -51,13 +51,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_19_structs", "lab_19_st
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_22_northwind", "lab_22_northwind\lab_22_northwind.csproj", "{D69DD536-837C-40EF-9BB9-F099D8A3C768}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQL Script Test", "SQL Script Test\SQL Script Test.csproj", "{8F968B12-E054-4D64-8DB1-3F96A18B02AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQL Script Test", "SQL Script Test\SQL Script Test.csproj", "{8F968B12-E054-4D64-8DB1-3F96A18B02AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Script Test Framework", "Script Test Framework\Script Test Framework.csproj", "{DA46B7C3-BBB2-49D9-A79A-9CD6CE3E4A3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_23_LINQ", "lab_23_LINQ\lab_23_LINQ.csproj", "{E70C9113-4FA1-4F7B-8D83-2AF6BE4A4A04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_26_Customers_App", "Lab_26_Customers_App\Lab_26_Customers_App.csproj", "{92664410-1C57-4712-B921-68DC7E1468EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_25_data_types", "lab_25_data_types\lab_25_data_types.csproj", "{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{92664410-1C57-4712-B921-68DC7E1468EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92664410-1C57-4712-B921-68DC7E1468EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92664410-1C57-4712-B921-68DC7E1468EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

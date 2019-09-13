@@ -50,6 +50,8 @@ namespace Lab_26_Customers_App
             {
                 customers = db.Customers.ToList();
                 orders = db.Orders.ToList();
+
+                ListBoxCustomers.ItemsSource = customers;
             }
 
         }
@@ -157,9 +159,9 @@ namespace Lab_26_Customers_App
         }
         void goToStack03()
         {
-            StackPanel01.Visibility = Visibility.Visible;
+            StackPanel01.Visibility = Visibility.Collapsed;
             StackPanel02.Visibility = Visibility.Collapsed;
-            StackPanel03.Visibility = Visibility.Collapsed;
+            StackPanel03.Visibility = Visibility.Visible;
         }
     }
 }

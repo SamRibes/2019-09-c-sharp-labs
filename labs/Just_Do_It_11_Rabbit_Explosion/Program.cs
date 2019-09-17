@@ -31,21 +31,7 @@ namespace Just_Do_It_11_Rabbit_Explosion
             File.WriteAllText(fileName, "Rabbit Log");
 
             Console.WriteLine($"Current population is {rabbits.Count}.");
-
-            while (rabbits.Count < popLimit)
-            {
-                if (rabbits.Count < 1)
-                {
-                    var initialRabbit = new Rabbit(0);
-                    rabbits.Add(initialRabbit);
-                    File.AppendAllText(fileName, $"Rabbit born at {DateTime.Now}");
-                }
-
-                var currentPop = rabbits.Count;
-
-                for (var i = 0; i < (currentPop); i++)
-                {
-                    rabbits[i].Age++;
+            made a big ol mistake
                     if (rabbits[i].Age >= adultAge)
                     {
                         var newRabbit = new Rabbit(0);

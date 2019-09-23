@@ -59,11 +59,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_23_LINQ", "lab_23_LINQ\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_26_Customers_App", "Lab_26_Customers_App\Lab_26_Customers_App.csproj", "{92664410-1C57-4712-B921-68DC7E1468EE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_25_data_types", "lab_25_data_types\lab_25_data_types.csproj", "{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_25_data_types", "lab_25_data_types\lab_25_data_types.csproj", "{A1D39A93-5B5B-49C0-A18F-E9C0D4FFCCF4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_26_execption_handling", "lab_26_execption_handling\lab_26_execption_handling.csproj", "{E70978CE-8CAF-4CAD-B27F-F8E7268DC87D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_31_tasks", "lab_31_tasks\lab_31_tasks.csproj", "{E38A2344-E913-4805-8104-B69DE8917428}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_26_execption_handling", "lab_26_execption_handling\lab_26_execption_handling.csproj", "{E70978CE-8CAF-4CAD-B27F-F8E7268DC87D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,10 +189,6 @@ Global
 		{E70978CE-8CAF-4CAD-B27F-F8E7268DC87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E70978CE-8CAF-4CAD-B27F-F8E7268DC87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E70978CE-8CAF-4CAD-B27F-F8E7268DC87D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E38A2344-E913-4805-8104-B69DE8917428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E38A2344-E913-4805-8104-B69DE8917428}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E38A2344-E913-4805-8104-B69DE8917428}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E38A2344-E913-4805-8104-B69DE8917428}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

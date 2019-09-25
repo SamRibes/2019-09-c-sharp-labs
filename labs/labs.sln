@@ -65,9 +65,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_26_execption_handling",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_31_tasks", "lab_31_tasks\lab_31_tasks.csproj", "{E38A2344-E913-4805-8104-B69DE8917428}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_32_events", "lab_32_events\lab_32_events.csproj", "{68DEE794-4FF3-4032-A8DA-DBC45AC1163E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_32_events", "lab_32_events\lab_32_events.csproj", "{68DEE794-4FF3-4032-A8DA-DBC45AC1163E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_33_oop_events", "lab_33_oop_events\lab_33_oop_events.csproj", "{B58FD5CF-DD0B-4F18-A3B3-5AF1D16DF2A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_33_oop_events", "lab_33_oop_events\lab_33_oop_events.csproj", "{B58FD5CF-DD0B-4F18-A3B3-5AF1D16DF2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_34_API_Northwind", "lab_34_API_Northwind\lab_34_API_Northwind.csproj", "{60608366-F2E2-4F04-97D1-830FD6F81645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_35_api_to_do", "lab_35_api_to_do\lab_35_api_to_do.csproj", "{179F32E4-E060-4F07-ABCF-8F7B347E7BB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -207,6 +211,14 @@ Global
 		{B58FD5CF-DD0B-4F18-A3B3-5AF1D16DF2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B58FD5CF-DD0B-4F18-A3B3-5AF1D16DF2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B58FD5CF-DD0B-4F18-A3B3-5AF1D16DF2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60608366-F2E2-4F04-97D1-830FD6F81645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60608366-F2E2-4F04-97D1-830FD6F81645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60608366-F2E2-4F04-97D1-830FD6F81645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60608366-F2E2-4F04-97D1-830FD6F81645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179F32E4-E060-4F07-ABCF-8F7B347E7BB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179F32E4-E060-4F07-ABCF-8F7B347E7BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179F32E4-E060-4F07-ABCF-8F7B347E7BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179F32E4-E060-4F07-ABCF-8F7B347E7BB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

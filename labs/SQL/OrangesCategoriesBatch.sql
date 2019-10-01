@@ -21,7 +21,6 @@
 --)
 --go
 
-
 --insert into Oranges values ('Clementine', '2018-12-25', 0 , 2)
 --insert into Oranges values ('Blood Orange', '2018-12-25', 0 , 1)
 --insert into Oranges values ('Tangerine', '2018-12-25', 1 , 3)

@@ -77,7 +77,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_36_reference_value_type
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_37_overflow", "lab_37_overflow\lab_37_overflow.csproj", "{EE7E2737-4A28-4768-AD93-82ADB37C541B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_38_raw_sql", "lab_38_raw_sql\lab_38_raw_sql.csproj", "{BD066771-9EBD-482D-8563-8E549DB2DE85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_38_raw_sql", "lab_38_raw_sql\lab_38_raw_sql.csproj", "{BD066771-9EBD-482D-8563-8E549DB2DE85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_39_environment_variables", "lab_39_environment_variables\lab_39_environment_variables.csproj", "{433A4414-C42B-42F4-9645-D72D11620A21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +239,10 @@ Global
 		{BD066771-9EBD-482D-8563-8E549DB2DE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD066771-9EBD-482D-8563-8E549DB2DE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD066771-9EBD-482D-8563-8E549DB2DE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433A4414-C42B-42F4-9645-D72D11620A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433A4414-C42B-42F4-9645-D72D11620A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433A4414-C42B-42F4-9645-D72D11620A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433A4414-C42B-42F4-9645-D72D11620A21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

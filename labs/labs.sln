@@ -84,6 +84,7 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_40_use_library", "lab_40_use_library\lab_40_use_library.csproj", "{36094B0F-37B1-4A78-B1D9-ABB61E8AAA4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_40_entity_code_first_", "lab_40_entity_code_first_\lab_40_entity_code_first_.csproj", "{14A6829E-7C5C-4EAF-AEB6-1A70FEEDFFC1}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Customers";
+}
+
+<h2>Here are some customers</h2>
+
+<ul>
+    @foreach(var customer in ViewBag.CustomersList)
+    {
+        <li>@customer.CustomerID</li>
+    }
+</ul>
+

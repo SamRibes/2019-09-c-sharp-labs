@@ -7,7 +7,6 @@ namespace lab_38_raw_sql
 {
     class Program
     {
-
         static List<Customer> customers = new List<Customer>();
         static string connectionString = $@"Data Source=localhost; Initial Catalog=Northwind; Persist Security Info=True; User ID=SA; Password={Environment.GetEnvironmentVariable("DBPassword")}";
         static string connectionString2 = @"Data Source=(localdb)\mssqllocaldb; Initial Catalog=Northwind;";

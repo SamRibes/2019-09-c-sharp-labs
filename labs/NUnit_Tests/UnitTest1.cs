@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using Just_Do_It_11_Rabbit_Explosion;
+using labs_Just_Do_it_17_enum_with_tests;
 using System;
 
 namespace Tests
@@ -7,35 +7,20 @@ namespace Tests
     public class Tests
     {
         [SetUp]
-        public void Setup()
+        public void Setup(){}
+
+        [TestCase(1, 2, "Sun", "Feb")]
+        [TestCase(1, 3, "Sun", "Mar")]
+        [TestCase(1, 4, "Sun", "Apr")]
+        [TestCase(1, 5, "Sun", "May")]
+        public void TestEnumsGetDayMonth(int day, int month, string expectedDay, string expectedMonth)
         {
+            //arrange
 
+            //act
+            var act = TestEnums.GetDayMonth(day, month);
+            //assert
+            Assert.AreEqual(act, (expectedDay,expectedMonth));
         }
-
-        [Test]
-        //public void TestMeSomething_RunTestMeNow_Tests()
-        //{
-        //    var expected = 100;
-        //    var actual = TestMeSomething.RunThisTestNow(10);
-        //    Assert.AreEqual(expected, actual);
-        //}
-
-        //[TestCase(10, 100)]
-        //[TestCase(100, 10000)]
-        //[TestCase(9, 82)]
-        //public void TestMeSomething_RunTestMeNow_Tests(int input, int expected)
-        //{
-        //    var actual = TestMeSomething.RunThisTestNow(input);
-        //    Assert.AreEqual(expected, actual);
-        //    System.Console.WriteLine();
-        //}
-
-        [TestCase(1000, 20)]
-        public void TestRabbitExplosion (int popLimit, int expectedYears)
-        {
-            var actual = just_do_it_11_rabbit_explosion.Rabbit_Exponential_Growth(popLimit).ToTuple().Item1;
-            Assert.AreEqual(expectedYears, actual);
-        }
-
-    }
+    } 
 }

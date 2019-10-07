@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Just_Do_It_11_Rabbit_Explosion\Just_Do_It_11_Rabbit_Explosion.csproj" />
+    <ProjectReference Include="..\labs_Just_Do_it_17_enum_with_tests\labs_Just_Do_it_17_enum_with_tests.csproj" />
   </ItemGroup>
 
 </Project>

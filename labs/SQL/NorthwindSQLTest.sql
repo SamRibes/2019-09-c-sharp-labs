@@ -73,14 +73,14 @@
 -- WHERE b.ReportsTo = a.EmployeeID;
 
 -- --3.2
--- SELECT Suppliers.CompanyName, 
--- SUM((Quantity* [Order Details].UnitPrice)*(1-Discount)) as 'Discount Applied' 
--- FROM Products
--- INNER JOIN [Order Details] on [Order Details].ProductID = Products.ProductID
--- INNER JOIN Suppliers on Suppliers.SupplierID = [Products].SupplierID
--- GROUP BY Suppliers.CompanyName 
--- HAVING SUM((Quantity* [Order Details].UnitPrice)*(1-Discount)) > 10000
--- ORDER BY [Discount Applied] DESC
+SELECT Suppliers.CompanyName, 
+SUM((Quantity* [Order Details].UnitPrice)*(1-Discount)) as 'Discount Applied' 
+FROM Products
+INNER JOIN [Order Details] on [Order Details].ProductID = Products.ProductID
+INNER JOIN Suppliers on Suppliers.SupplierID = [Products].SupplierID
+GROUP BY Suppliers.CompanyName 
+HAVING SUM((Quantity* [Order Details].UnitPrice)*(1-Discount)) > 10000
+ORDER BY [Discount Applied] DESC
 
 -- --3.3
 -- SELECT TOP 10 ContactName, SUM((Quantity*UnitPrice)*1-Discount) as 'Total $ Amount of Orders' FROM Customers

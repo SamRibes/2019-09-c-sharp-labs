@@ -9,13 +9,13 @@ namespace Just_Do_It_11_Rabbit_Explosion
     {
         static void Main(string[] args)
         {
-            var results = just_do_it_11_rabbit_explosion.Rabbit_Exponential_Growth(1000).ToTuple();
-            Console.WriteLine(($"Took {results.Item1} years to exceed the population limit. Finished with {results.Item2} rabbits."));
+/*            var results = just_do_it_11_rabbit_explosion.Rabbit_Exponential_Growth(1000).ToTuple();
+            Console.WriteLine(($"Took {results.Item1} years to exceed the population limit. Finished with {results.Item2} rabbits."));*/
         }
 
     }
 
-    public class just_do_it_11_rabbit_explosion
+    /*public class just_do_it_11_rabbit_explosion
     {
         public static (int years, int population) Rabbit_Exponential_Growth(int popLimit)
         {
@@ -49,15 +49,15 @@ namespace Just_Do_It_11_Rabbit_Explosion
             File.AppendAllText(fileName, $"Took {years} years to exceed the population limit. Finished with {rabbits.Count} rabbits.");
             return (years, rabbits.Count);
         }
-    }
-    class Rabbit
+    }*/
+/*    class Rabbit
     {
         public string Name { get; set; }
         public int Age { get; set; }
         public Rabbit(int age) {
             Age = age;
         }
-    }
+    }*/
 
 }
 

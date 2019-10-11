@@ -23,5 +23,6 @@
         <TextBox x:Name="NameBox" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="50"/>
         <!--<TextBlock x:Name="DataBlock" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="WhiteSmoke"/>-->
         <DataGrid x:Name="RabbitGrid" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="WhiteSmoke"/>
+        
     </Grid>
 </Window>

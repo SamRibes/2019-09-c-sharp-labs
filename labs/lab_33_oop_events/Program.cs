@@ -30,7 +30,7 @@ namespace lab_33_oop_events
         {
             this.Age = 0;
             Console.WriteLine("Congrats! Beautiful baby :)");
-            HaveABirthday += Celebrate;
+            /*HaveABirthday += Celebrate;*/
         }
 
         int Celebrate()
@@ -42,7 +42,7 @@ namespace lab_33_oop_events
 
         public void Grow()
         {
-            int ageNow = HaveABirthday();
+            /*int ageNow = HaveABirthday();*/
         }
     }
 }

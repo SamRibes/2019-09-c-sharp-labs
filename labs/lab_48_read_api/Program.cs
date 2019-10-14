@@ -25,14 +25,16 @@ namespace lab_48_read_api
                 CategoryID = 3
             };
 
+            
+
             TaskItem NewTaskItem  = PostNewTaskItemAsync(t).Result;
 
             PrintItems(GetTaskItemsAsync().Result);
 
             PrintItem(GetTaskItemAsync(1).Result);
             TaskItem item = GetTaskItemAsync(1).Result;
-            TaskItem item2 = UpdateCustomerAsync(item).Result;
-            PrintItem(item2);
+            //TaskItem item2 = UpdateCustomerAsync(item).Result;
+            //PrintItem(item2);
         }
 
         static async Task<TaskItem> PostNewTaskItemAsync(TaskItem newItem)
@@ -46,6 +48,7 @@ namespace lab_48_read_api
             var newItemAsTask = JsonConvert.DeserializeObject<TaskItem>(newItemAsJson.Result);
             return newItemAsTask;
         }
+
         static async Task<TaskItem> GetTaskItemAsync(int itemID)
         {
             Console.WriteLine("Getting Task Item");
@@ -57,7 +60,7 @@ namespace lab_48_read_api
                 taskItem = JsonConvert.DeserializeObject<TaskItem>(responseString);
             }
             
-            return (TaskItem)DeserializeObject(response);
+            return DeserializeObject(response);
         }
         static async Task<List<TaskItem>> GetTaskItemsAsync()
         {
@@ -70,13 +73,15 @@ namespace lab_48_read_api
             return taskItems;
         }
 
-        static async Task<TaskItem> UpdateCustomerAsync(TaskItem taskItemToUpdate)
+        static async Task<T> UpdateCustomerAsync<T>(TaskItem taskItemToUpdate)
         {
+            T item = default(T);
             int id = taskItemToUpdate.TaskItemID;
             var getResponse = await client.GetAsync(url + id);
             var gotItemAsJson = getResponse.Content.ReadAsStringAsync();
-            var gotItemAsTask = JsonConvert.DeserializeObject<TaskItem>(gotItemAsJson.Result);
-
+            Console.WriteLine(gotItemAsJson.ToString());
+            var gotItemAsTask = JsonConvert.DeserializeObject<T>(gotItemAsJson.Result);
+            
             var values = JsonConvert.SerializeObject(taskItemToUpdate);
             var content = new StringContent(values);
 
@@ -88,10 +93,12 @@ namespace lab_48_read_api
 
             if (response.IsSuccessStatusCode)
             {
-                DeserializeObject(response);
+                //item = DeserializeObject(response);
+                var objectAsJson = response.Content.ReadAsStringAsync();
+                var objectAsTask = JsonConvert.DeserializeObject<TaskItem>(objectAsJson.Result);
             }
 
-            return (TaskItem)DeserializeObject(response);
+            return item;
         }
 
         static void PrintItems(List<TaskItem> items)

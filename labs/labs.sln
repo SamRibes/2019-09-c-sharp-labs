@@ -105,6 +105,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_49_ToDoItems_Website", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_49_mvc_core_ToDoItems_website", "lab_49_mvc_core_ToDoItems_website\lab_49_mvc_core_ToDoItems_website.csproj", "{02E8F214-A788-4E01-BE8A-1D2ED98C22C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "just_do_it_SQL_EXAM", "just_do_it_SQL_EXAM\just_do_it_SQL_EXAM.csproj", "{9F729B1C-F095-4000-9A29-7B92E78B0887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "just_do_it_MVC_SQL_EXAM", "just_do_it_MVC_SQL_EXAM\just_do_it_MVC_SQL_EXAM.csproj", "{D39EDE9D-4523-4B9C-88E5-477BC7966878}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +319,14 @@ Global
 		{02E8F214-A788-4E01-BE8A-1D2ED98C22C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E8F214-A788-4E01-BE8A-1D2ED98C22C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E8F214-A788-4E01-BE8A-1D2ED98C22C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F729B1C-F095-4000-9A29-7B92E78B0887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F729B1C-F095-4000-9A29-7B92E78B0887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F729B1C-F095-4000-9A29-7B92E78B0887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F729B1C-F095-4000-9A29-7B92E78B0887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39EDE9D-4523-4B9C-88E5-477BC7966878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39EDE9D-4523-4B9C-88E5-477BC7966878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39EDE9D-4523-4B9C-88E5-477BC7966878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39EDE9D-4523-4B9C-88E5-477BC7966878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

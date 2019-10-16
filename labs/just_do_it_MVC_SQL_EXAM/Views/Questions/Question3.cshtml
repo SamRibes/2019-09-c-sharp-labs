@@ -1,0 +1,40 @@
+﻿@model IEnumerable<just_do_it_MVC_SQL_EXAM.ProductSupplier>
+
+@{
+    ViewData["Title"] = "Question 3";
+}
+
+<h2>Question 3</h2>
+
+<table class="table table-striped table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Supplier Name
+            </th>
+            <th>
+                Supplier Country
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @item.ProductName
+            </td>
+            <td>
+                @item.CompanyName
+            </td>
+            <td>
+                @item.Country
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
